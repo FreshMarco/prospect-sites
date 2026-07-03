@@ -3,100 +3,161 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Blu Oceano Surgelati SRL – Lavorazione e surgelazione prodotti ittici, Chioggia</title>
-<meta name="description" content="Blu Oceano Surgelati SRL di Chioggia (VE): lavorazione, surgelazione e confezionamento di prodotti ittici per la grande distribuzione in Italia, Francia e Germania.">
+<title>Blu Oceano Surgelati | Prodotti ittici surgelati per il retail europeo</title>
+<meta name="description" content="Blu Oceano Surgelati SRL – Chioggia (VE). Lavorazione e surgelazione di prodotti ittici per la GDO in Italia, Francia e Germania. Certificazioni IFS Food e BRCGS.">
 <style>
+  :root {
+    --blu: #06263f;
+    --blu-medio: #0e4d76;
+    --accent: #29a3d4;
+    --grigio: #eef3f6;
+  }
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; color: #16324a; background: #f2f7fa; line-height: 1.6; }
-  header { background: #0b3d5c; color: #fff; padding: 16px 28px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
-  header .logo { font-size: 1.4rem; font-weight: 700; }
-  header .logo span { color: #6fc7e6; }
-  header nav a { color: #cde8f5; text-decoration: none; margin-left: 20px; font-size: 0.92rem; text-transform: uppercase; letter-spacing: 0.5px; }
-  .hero { background: linear-gradient(160deg, #0b3d5c 0%, #14648f 60%, #1e88b8 100%); color: #fff; padding: 80px 28px; text-align: left; }
-  .hero-inner { max-width: 960px; margin: 0 auto; }
-  .hero h1 { font-size: 2.3rem; font-weight: 600; margin-bottom: 14px; max-width: 620px; }
-  .hero p { font-size: 1.1rem; max-width: 560px; color: #d6ecf7; }
-  section { max-width: 960px; margin: 0 auto; padding: 46px 28px; }
-  h2 { color: #0b3d5c; font-size: 1.45rem; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 1px; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; color: #1c2b36; background: #fff; line-height: 1.6; }
+  .nav { position: sticky; top: 0; z-index: 10; background: var(--blu); display: flex; justify-content: space-between; align-items: center; padding: 12px 5vw; box-shadow: 0 2px 8px rgba(6,38,63,.35); }
+  .nav .marchio { display: flex; align-items: center; gap: 10px; color: #fff; font-weight: 700; font-size: 1.05rem; letter-spacing: .04em; }
+  .nav ul { display: flex; list-style: none; gap: 26px; }
+  .nav a { color: #bfe0f0; text-decoration: none; font-size: .82rem; text-transform: uppercase; letter-spacing: .12em; }
+  .nav a:hover { color: #fff; }
+  .hero { background: var(--blu); color: #fff; padding: 90px 5vw 110px; position: relative; overflow: hidden; }
+  .hero::after { content: ""; position: absolute; inset: auto 0 0 0; height: 70px; background: linear-gradient(to top right, #fff 49%, transparent 50%); }
+  .hero .wrap { max-width: 1080px; margin: 0 auto; }
+  .hero h1 { font-size: clamp(1.8rem, 4vw, 2.6rem); font-weight: 600; max-width: 640px; margin-bottom: 16px; }
+  .hero p { color: #a8cde2; max-width: 540px; font-size: 1.08rem; }
+  .kpi-band { background: var(--blu-medio); color: #fff; }
+  .kpi-band .wrap { max-width: 1080px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+  .kpi-band .cella { padding: 30px 24px; text-align: center; border-left: 1px solid rgba(255,255,255,.15); }
+  .kpi-band .cella:first-child { border-left: none; }
+  .kpi-band strong { display: block; font-size: 2rem; color: #7fd4f5; font-weight: 700; }
+  .kpi-band span { font-size: .85rem; text-transform: uppercase; letter-spacing: .08em; color: #cde6f2; }
+  main section { max-width: 1080px; margin: 0 auto; padding: 60px 5vw; }
+  h2 { color: var(--blu); font-size: 1.5rem; font-weight: 600; margin-bottom: 24px; padding-left: 14px; border-left: 5px solid var(--accent); }
   p { margin-bottom: 12px; }
-  .kpi { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin-top: 8px; }
-  .kpi div { background: #fff; border-top: 4px solid #1e88b8; box-shadow: 0 1px 4px rgba(11,61,92,0.12); padding: 20px; text-align: center; }
-  .kpi strong { display: block; font-size: 1.7rem; color: #14648f; }
-  .news article { background: #fff; box-shadow: 0 1px 4px rgba(11,61,92,0.1); padding: 16px 20px; margin-bottom: 14px; border-radius: 4px; }
-  .news h3 { font-size: 1.05rem; color: #0b3d5c; margin-bottom: 6px; }
-  .news time { font-size: 0.85rem; color: #5b7f95; }
-  footer { background: #0b3d5c; color: #cde8f5; padding: 26px 28px; text-align: center; font-size: 0.92rem; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 22px; }
+  .card { background: var(--grigio); border-radius: 6px; padding: 26px; }
+  .card h3 { color: var(--blu-medio); font-size: 1.05rem; margin-bottom: 10px; }
+  .card p { font-size: .95rem; margin-bottom: 0; }
+  .comunicati article { border: 1px solid #d9e4ec; border-radius: 6px; padding: 20px 24px; margin-bottom: 16px; }
+  .comunicati h3 { color: var(--blu); font-size: 1.05rem; margin-bottom: 4px; }
+  .comunicati time { font-size: .8rem; color: #6b8598; text-transform: uppercase; letter-spacing: .08em; }
+  .comunicati p { margin-top: 10px; margin-bottom: 0; font-size: .96rem; }
+  footer { background: var(--blu); color: #9fc3d8; padding: 50px 5vw 30px; }
+  footer .colonne { max-width: 1080px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 30px; }
+  footer h4 { color: #fff; font-size: .85rem; text-transform: uppercase; letter-spacing: .12em; margin-bottom: 12px; }
+  footer p { font-size: .9rem; margin-bottom: 6px; }
+  footer .legale { max-width: 1080px; margin: 34px auto 0; padding-top: 18px; border-top: 1px solid rgba(255,255,255,.15); font-size: .8rem; text-align: center; }
 </style>
 </head>
 <body>
-<header>
-  <div class="logo">BLU <span>OCEANO</span> SURGELATI</div>
-  <nav><a href="#azienda">Azienda</a><a href="#servizi">Lavorazioni</a><a href="#news">News</a><a href="#contatti">Contatti</a></nav>
-</header>
+
+<nav class="nav">
+  <div class="marchio">
+    <svg width="42" height="30" viewBox="0 0 42 30" role="img" aria-label="Logo Blu Oceano">
+      <path d="M1 22 Q8 10 15 18 T29 16 T41 14" fill="none" stroke="#29a3d4" stroke-width="3.5" stroke-linecap="round"/>
+      <path d="M1 28 Q10 18 19 24 T41 22" fill="none" stroke="#7fd4f5" stroke-width="2.5" stroke-linecap="round"/>
+      <circle cx="34" cy="6" r="3" fill="#7fd4f5"/>
+    </svg>
+    BLU OCEANO SURGELATI
+  </div>
+  <ul>
+    <li><a href="#lavorazioni">Lavorazioni</a></li>
+    <li><a href="#profilo">Profilo</a></li>
+    <li><a href="#sostenibilita">Sostenibilità</a></li>
+    <li><a href="#comunicati">Comunicati</a></li>
+    <li><a href="#contatti">Contatti</a></li>
+  </ul>
+</nav>
 
 <div class="hero">
-  <div class="hero-inner">
-    <h1>Il pesce dell'Adriatico, surgelato a regola d'arte</h1>
-    <p>Dalla laguna di Chioggia ai banchi frigo della grande distribuzione europea: lavorazione, surgelazione e confezionamento di prodotti ittici dal 1988.</p>
+  <div class="wrap">
+    <h1>Prodotti ittici surgelati per il retail europeo, da Chioggia dal 1988</h1>
+    <p>Lavorazione, surgelazione rapida e confezionamento per la grande distribuzione in Italia, Francia e Germania. Private label e linea a marchio.</p>
   </div>
 </div>
 
-<section id="azienda">
-  <h2>L'azienda</h2>
-  <p>Blu Oceano Surgelati SRL opera a Chioggia, in provincia di Venezia, a pochi passi da uno dei mercati ittici più importanti d'Italia. Fondata nel 1988 da due famiglie di operatori del mercato del pesce, l'azienda è cresciuta rimanendo fedele alla sua vocazione originaria: portare il pescato dell'Adriatico sulle tavole europee senza comprometterne la freschezza. Lo stabilimento di 4.200 m² è dotato di tunnel di surgelazione rapida, tre celle di stoccaggio a bassa temperatura e linee di confezionamento skin e flow-pack. Occupiamo 46 addetti tra produzione, controllo qualità e uffici commerciali.</p>
-  <p>Il nostro core business è la trasformazione di pesce azzurro, cefalopodi e crostacei in referenze surgelate destinate al retail: private label per insegne della GDO e la nostra linea a marchio "Blu Oceano". Serviamo clienti della grande distribuzione in Italia, Francia e Germania, con una quota export in costante aumento.</p>
-</section>
+<div class="kpi-band">
+  <div class="wrap">
+    <div class="cella"><strong>12</strong><span>pallet spediti / settimana</span></div>
+    <div class="cella"><strong>-18/-25&nbsp;°C</strong><span>range di trasporto richiesto</span></div>
+    <div class="cella"><strong>3</strong><span>mercati serviti: IT · FR · DE</span></div>
+    <div class="cella"><strong>4.200&nbsp;m²</strong><span>stabilimento produttivo</span></div>
+  </div>
+</div>
 
-<section id="servizi">
-  <h2>Lavorazioni e certificazioni</h2>
-  <p>Eseguiamo eviscerazione, filettatura, glassatura e surgelazione rapida a bordo linea, con abbattimento a -35&nbsp;°C e stoccaggio tra -18 e -25&nbsp;°C. Ogni lotto è tracciato dalla banchina al pallet e accompagnato da certificato di analisi. Lo stabilimento è certificato IFS Food e BRCGS, con piano HACCP verificato da ente terzo.</p>
-  <p>La catena del freddo è per noi un requisito non negoziabile: il prodotto lascia lo stabilimento esclusivamente su mezzi a temperatura controllata e con registrazione continua, perché un solo grado fuori range può compromettere un intero carico.</p>
-</section>
-
-<section>
-  <h2>I numeri</h2>
-  <div class="kpi">
-    <div><strong>12</strong>pallet spediti a settimana</div>
-    <div><strong>-18/-25&nbsp;°C</strong>range di trasporto richiesto</div>
-    <div><strong>3</strong>mercati serviti: IT, FR, DE</div>
-    <div><strong>4.200&nbsp;m²</strong>di stabilimento produttivo</div>
+<main>
+<section id="lavorazioni">
+  <h2>Lavorazioni e standard</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Trasformazione</h3>
+      <p>Eviscerazione, filettatura, glassatura e surgelazione rapida a bordo linea con abbattimento a -35&nbsp;°C. Confezionamento skin e flow-pack per il libero servizio.</p>
+    </div>
+    <div class="card">
+      <h3>Certificazioni</h3>
+      <p>Stabilimento certificato IFS Food e BRCGS, piano HACCP verificato da ente terzo. Ogni lotto è tracciato dalla banchina al pallet, con certificato di analisi a corredo.</p>
+    </div>
+    <div class="card">
+      <h3>Catena del freddo</h3>
+      <p>Stoccaggio tra -18 e -25&nbsp;°C e spedizione esclusivamente su mezzi a temperatura controllata con registrazione continua: un solo grado fuori range può compromettere un intero carico.</p>
+    </div>
   </div>
 </section>
 
-<section id="filiera">
-  <h2>Filiera e sostenibilità</h2>
-  <p>Il nostro approvvigionamento poggia su due gambe: il pescato locale dell'alto Adriatico, acquistato ogni mattina alle aste di Chioggia e Pila, e le partite di pesce azzurro e cefalopedi da flotte mediterranee e atlantiche certificate. Ogni fornitore è qualificato dal nostro ufficio acquisti e sottoposto a verifica documentale su zone FAO di cattura, metodi di pesca e conformità sanitaria.</p>
-  <p>Dal 2023 abbiamo aderito a un programma volontario di approvvigionamento responsabile: privilegiamo specie non sovrasfruttate, rendicontiamo la provenienza di ogni lotto in etichetta e abbiamo eliminato il polistirolo monouso dal nostro magazzino ricevimento, sostituito da casse riutilizzabili in circuito chiuso.</p>
-  <p>Anche l'energia fa la sua parte: l'impianto fotovoltaico da 340 kWp installato sul tetto dello stabilimento copre circa un quarto del fabbisogno delle celle, e il recupero del calore dei compressori alimenta il riscaldamento degli uffici. Piccoli passi, misurati e rendicontati ogni anno nel nostro bilancio ambientale volontario.</p>
+<section id="profilo">
+  <h2>Profilo aziendale</h2>
+  <p>Blu Oceano Surgelati SRL opera a Chioggia (VE), a pochi passi da uno dei principali mercati ittici italiani. Fondata nel 1988 da due famiglie di operatori del mercato del pesce, trasforma pesce azzurro, cefalopodi e crostacei in referenze surgelate per il retail: private label per insegne GDO e la linea a marchio "Blu Oceano".</p>
+  <p>Lo stabilimento di 4.200&nbsp;m² dispone di tunnel di surgelazione rapida, tre celle di stoccaggio a bassa temperatura e linee di confezionamento dedicate. L'organico conta 46 addetti tra produzione, controllo qualità e area commerciale. I clienti sono insegne della grande distribuzione in Italia, Francia e Germania, con quota export in costante aumento.</p>
+  <p>Il modello operativo privilegia la continuità di fornitura: programmazione settimanale concordata con i category manager delle insegne, scorte di sicurezza sulle referenze ad alta rotazione e capacità produttiva riservata per le promozioni pianificate. Un approccio che riduce le rotture di stock e rende prevedibile l'intera catena, dal ricevimento alla consegna.</p>
 </section>
 
-<section id="news" class="news">
-  <h2>News</h2>
+<section id="sostenibilita">
+  <h2>Approvvigionamento e sostenibilità</h2>
+  <p>Il pescato locale dell'alto Adriatico viene acquistato ogni mattina alle aste di Chioggia e Pila; le partite di pesce azzurro e cefalopodi provengono da flotte mediterranee e atlantiche certificate. Ogni fornitore è qualificato dall'ufficio acquisti con verifica documentale su zone FAO di cattura, metodi di pesca e conformità sanitaria.</p>
+  <p>Dal 2023 l'azienda aderisce a un programma volontario di approvvigionamento responsabile: specie non sovrasfruttate, provenienza di ogni lotto dichiarata in etichetta, eliminazione del polistirolo monouso dal magazzino ricevimento in favore di casse riutilizzabili a circuito chiuso. L'impianto fotovoltaico da 340 kWp copre circa un quarto del fabbisogno delle celle e il recupero termico dei compressori alimenta il riscaldamento degli uffici. I risultati sono misurati e pubblicati ogni anno nel bilancio ambientale volontario.</p>
+</section>
+
+<section id="comunicati" class="comunicati">
+  <h2>Comunicati</h2>
   <article>
-    <h3>Export in crescita: cerchiamo nuovi partner per il freddo</h3>
+    <h3>Export in crescita: aperta la qualifica di nuovi partner per il freddo</h3>
     <time>Maggio 2026</time>
-    <p>Con l'ingresso di due nuove insegne tedesche il flusso settimanale ha raggiunto i 12 pallet a -18/-25&nbsp;°C. Per sostenere la crescita apriamo la qualifica a nuovi partner logistici certificati per il trasporto di surgelati alimentari, con particolare interesse per soluzioni di groupage refrigerato sulle tratte europee, che ci permetterebbero di servire ordini più frequenti e frazionati.</p>
+    <p>Con l'ingresso di due nuove insegne tedesche il flusso settimanale ha raggiunto i 12 pallet a -18/-25&nbsp;°C. Per sostenere la crescita è aperta la qualifica di nuovi partner logistici certificati per il trasporto di surgelati alimentari; particolare interesse per soluzioni di groupage refrigerato sulle tratte europee, funzionali a ordini più frequenti e frazionati.</p>
   </article>
   <article>
-    <h3>Rinnovata la certificazione IFS Food con punteggio "Higher Level"</h3>
+    <h3>IFS Food rinnovata con punteggio "Higher Level"</h3>
     <time>Febbraio 2026</time>
-    <p>L'audit annuale si è chiuso con il livello più alto dello standard. Un risultato che conferma la solidità del nostro sistema qualità e della filiera di approvvigionamento.</p>
+    <p>L'audit annuale si è chiuso con il livello più alto dello standard, a conferma della solidità del sistema qualità e della filiera di approvvigionamento.</p>
   </article>
   <article>
-    <h3>Nuova linea skin-pack per il banco frigo</h3>
+    <h3>Operativa la nuova linea skin-pack</h3>
     <time>Novembre 2025</time>
-    <p>È entrata in funzione la nuova linea di confezionamento skin sottovuoto, pensata per le referenze premium destinate al libero servizio della GDO francese.</p>
+    <p>In funzione la nuova linea di confezionamento skin sottovuoto per le referenze premium destinate al libero servizio della GDO francese.</p>
   </article>
 </section>
+</main>
 
-<section id="contatti">
-  <h2>Contatti</h2>
-  <p>Blu Oceano Surgelati SRL<br>
-  Via San Marco 87, Zona Ittica – 30015 Chioggia (VE)<br>
-  Tel. 041 5529940 · Email: info@bluoceanosurgelati.it<br>
-  P.IVA 03921180275 · Uffici commerciali: lun–ven 8:00–17:00</p>
-</section>
+<footer id="contatti">
+  <div class="colonne">
+    <div>
+      <h4>Blu Oceano Surgelati SRL</h4>
+      <p>Via San Marco 87, Zona Ittica<br>30015 Chioggia (VE)</p>
+      <p>Stabilimento CE IT 1234 L</p>
+    </div>
+    <div>
+      <h4>Contatti</h4>
+      <p>Tel. 041 5529940</p>
+      <p>Email: info@bluoceanosurgelati.it</p>
+      <p>Uffici commerciali: lun–ven 8:00–17:00</p>
+    </div>
+    <div>
+      <h4>Dati societari</h4>
+      <p>P.IVA 03921180275</p>
+      <p>Sede legale e operativa: Chioggia (VE)</p>
+    </div>
+  </div>
+  <div class="legale">© 2026 Blu Oceano Surgelati SRL – Tutti i diritti riservati</div>
+</footer>
 
-<footer>© 2026 Blu Oceano Surgelati SRL – Chioggia (VE) · Stabilimento CE IT 1234 L</footer>
 </body>
 </html>

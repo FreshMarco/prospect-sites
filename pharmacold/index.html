@@ -3,102 +3,196 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>PharmaCold Logistics Solutions SRL – Distribuzione farmaci e vaccini a temperatura controllata</title>
-<meta name="description" content="PharmaCold Logistics Solutions SRL, Parma: distribuzione di farmaci e vaccini in regime 2-8°C per aziende farmaceutiche, ospedali e farmacie. Qualità certificata GDP.">
+<title>PharmaCold Logistics Solutions S.r.l. – Logistica farmaceutica a temperatura controllata | Parma</title>
+<meta name="description" content="PharmaCold Logistics Solutions SRL, Parma. Deposito autorizzato e distribuzione di farmaci e vaccini in regime 2-8 °C. Sistema qualità conforme GDP e linee guida AIFA.">
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { font-family: Arial, 'Helvetica Neue', sans-serif; color: #23303e; background: #fdfdfe; line-height: 1.6; }
-  header { background: #ffffff; border-bottom: 1px solid #e1e6ec; padding: 16px 30px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; position: sticky; top: 0; }
-  header .logo { font-size: 1.3rem; font-weight: bold; color: #143a6b; }
-  header .logo em { color: #2e9edb; font-style: normal; }
-  header nav a { color: #46586c; text-decoration: none; margin-left: 20px; font-size: 0.9rem; }
-  .hero { background: #143a6b; color: #fff; padding: 72px 30px; }
-  .hero-inner { max-width: 920px; margin: 0 auto; }
-  .hero h1 { font-size: 2.1rem; font-weight: 600; margin-bottom: 14px; max-width: 640px; }
-  .hero p { color: #c5d9ef; max-width: 580px; font-size: 1.08rem; }
-  .badge { display: inline-block; background: #2e9edb; color: #fff; font-size: 0.8rem; padding: 4px 12px; border-radius: 20px; margin-bottom: 18px; letter-spacing: 1px; }
-  section { max-width: 920px; margin: 0 auto; padding: 44px 30px; }
-  h2 { color: #143a6b; font-size: 1.4rem; margin-bottom: 16px; }
+  body { font-family: 'Segoe UI', Tahoma, Arial, sans-serif; color: #33424f; background: #f4f8fb; line-height: 1.65; }
+  .contenitore { max-width: 1040px; margin: 0 auto; padding: 0 26px; }
+  header { background: #fff; border-bottom: 4px solid #9cc4de; padding: 14px 0; }
+  header .contenitore { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+  .logo { display: flex; align-items: center; gap: 10px; font-size: 1.15rem; font-weight: 700; color: #1b4f72; }
+  .logo em { font-style: normal; color: #5499c7; }
+  header nav a { color: #566e80; text-decoration: none; margin-left: 22px; font-size: .88rem; }
+  header nav a:hover { color: #1b4f72; text-decoration: underline; }
+  .testata { background: linear-gradient(135deg, #dceaf4 0%, #eef5fa 100%); padding: 64px 0; border-bottom: 1px solid #d4e2ec; }
+  .testata h1 { color: #1b4f72; font-size: clamp(1.7rem, 3.5vw, 2.3rem); font-weight: 600; max-width: 680px; margin-bottom: 14px; }
+  .testata p { max-width: 600px; color: #4c6272; font-size: 1.06rem; }
+  .etichetta { display: inline-block; background: #1b4f72; color: #fff; font-size: .74rem; letter-spacing: .16em; padding: 5px 14px; border-radius: 3px; margin-bottom: 20px; text-transform: uppercase; }
+  section { padding: 52px 0; }
+  section:nth-of-type(even) { background: #fff; }
+  h2 { color: #1b4f72; font-size: 1.35rem; font-weight: 600; margin-bottom: 20px; }
   p { margin-bottom: 12px; }
-  .kpi { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 16px; }
-  .kpi div { background: #eef5fb; border-radius: 8px; padding: 20px; text-align: center; }
-  .kpi strong { display: block; font-size: 1.6rem; color: #2e9edb; }
-  .news article { border: 1px solid #e1e6ec; border-radius: 8px; padding: 16px 20px; margin-bottom: 14px; background: #fff; }
-  .news h3 { font-size: 1.02rem; color: #143a6b; margin-bottom: 6px; }
-  .news time { font-size: 0.82rem; color: #7d8ea0; }
-  footer { background: #0e2a4d; color: #b9cbe0; padding: 26px 30px; text-align: center; font-size: 0.88rem; }
+  .badges { display: flex; gap: 28px; flex-wrap: wrap; align-items: center; margin-top: 6px; }
+  .badge-item { display: flex; align-items: center; gap: 14px; background: #fff; border: 1px solid #d4e2ec; border-radius: 8px; padding: 16px 22px; }
+  .badge-item .desc strong { display: block; color: #1b4f72; font-size: .98rem; }
+  .badge-item .desc span { font-size: .82rem; color: #6c8296; }
+  .icone-tec { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; margin-top: 8px; }
+  .icona-box { display: flex; gap: 16px; align-items: flex-start; background: #fff; border: 1px solid #d4e2ec; border-radius: 8px; padding: 20px; }
+  .icona-box h3 { color: #1b4f72; font-size: .98rem; margin-bottom: 6px; }
+  .icona-box p { font-size: .9rem; margin-bottom: 0; color: #4c6272; }
+  .indicatori { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 16px; }
+  .indicatori div { background: #fff; border: 1px solid #d4e2ec; border-left: 5px solid #5499c7; border-radius: 6px; padding: 20px; }
+  .indicatori strong { display: block; font-size: 1.65rem; color: #1b4f72; }
+  .indicatori span { font-size: .85rem; color: #6c8296; }
+  .comunicazioni article { background: #fff; border: 1px solid #d4e2ec; border-radius: 8px; padding: 18px 22px; margin-bottom: 14px; }
+  .comunicazioni h3 { font-size: 1.02rem; color: #1b4f72; margin-bottom: 4px; }
+  .comunicazioni time { font-size: .8rem; color: #7d93a5; }
+  .comunicazioni p { margin-top: 8px; margin-bottom: 0; font-size: .95rem; }
+  footer { background: #22303b; color: #aebfcc; padding: 40px 0 28px; font-size: .88rem; }
+  footer .contenitore > p { margin-bottom: 10px; }
+  footer .disclaimer { margin-top: 22px; padding-top: 18px; border-top: 1px solid #3a4a57; font-size: .78rem; color: #8194a3; line-height: 1.6; }
 </style>
 </head>
 <body>
+
 <header>
-  <div class="logo">Pharma<em>Cold</em> Logistics Solutions</div>
-  <nav><a href="#azienda">Azienda</a><a href="#servizi">Servizi</a><a href="#news">News</a><a href="#contatti">Contatti</a></nav>
+  <div class="contenitore">
+    <div class="logo">
+      <svg width="34" height="34" viewBox="0 0 34 34" role="img" aria-label="Logo PharmaCold">
+        <rect x="1" y="1" width="32" height="32" rx="7" fill="#1b4f72"/>
+        <path d="M17 6 L17 28 M9 10 L25 24 M25 10 L9 24 M6 17 L28 17" stroke="#9cc4de" stroke-width="2.4" stroke-linecap="round"/>
+        <circle cx="17" cy="17" r="4" fill="#5499c7"/>
+      </svg>
+      Pharma<em>Cold</em> Logistics Solutions
+    </div>
+    <nav>
+      <a href="#certificazioni">Certificazioni</a>
+      <a href="#servizi">Aree di servizio</a>
+      <a href="#profilo">Chi siamo</a>
+      <a href="#comunicazioni">Comunicazioni</a>
+      <a href="#sede">Dove siamo</a>
+    </nav>
+  </div>
 </header>
 
-<div class="hero">
-  <div class="hero-inner">
-    <span class="badge">CATENA DEL FREDDO FARMACEUTICA</span>
-    <h1>Ogni fiala alla temperatura giusta, dal magazzino al paziente</h1>
-    <p>Distribuiamo farmaci e vaccini in regime controllato 2-8&nbsp;°C per aziende farmaceutiche, ospedali e reti di farmacie in tutto il Nord e Centro Italia.</p>
+<div class="testata">
+  <div class="contenitore">
+    <span class="etichetta">Good Distribution Practice</span>
+    <h1>Logistica farmaceutica a temperatura controllata, documentata a ogni anello</h1>
+    <p>Deposito autorizzato e distribuzione di farmaci e vaccini in regime 2-8&nbsp;°C per aziende farmaceutiche, ospedali e reti di farmacie nel Nord e Centro Italia.</p>
   </div>
 </div>
 
-<section id="azienda">
-  <h2>L'azienda</h2>
-  <p>PharmaCold Logistics Solutions SRL nasce a Parma nel 2011 dall'esperienza di un gruppo di professionisti della supply chain farmaceutica. La scelta della sede non è casuale: il territorio parmense offre una posizione baricentrica rispetto ai poli farmaceutici del Nord Italia e un accesso rapido alle principali direttrici autostradali. Oggi gestiamo un deposito autorizzato di 6.500 m² con celle qualificate 2-8&nbsp;°C e aree a temperatura ambiente controllata 15-25&nbsp;°C, al servizio di 14 aziende farmaceutiche mandanti.</p>
-  <p>Il nostro sistema qualità opera in conformità alle Good Distribution Practice (GDP) e alle linee guida AIFA: ogni processo, dal ricevimento alla spedizione, è mappato, convalidato e sottoposto ad audit periodici da parte dei clienti e delle autorità.</p>
-</section>
-
-<section id="servizi">
-  <h2>Servizi</h2>
-  <p><strong>Deposito e gestione conto terzi</strong> – stoccaggio qualificato, gestione lotti e scadenze, picking a norma. <strong>Distribuzione secondaria</strong> – consegne programmate a ospedali, grossisti e farmacie. <strong>Gestione resi e richiami</strong> – procedure convalidate per recall di lotto entro 24 ore.</p>
-  <p>Per la distribuzione fisica ci avvaliamo di partner di trasporto selezionati. I requisiti di qualifica non sono negoziabili: certificazione GDP, mezzi qualificati e convalidati per il regime 2-8&nbsp;°C, personale formato e data logger a bordo con report di temperatura consegnato per ogni singola spedizione. I fornitori che non soddisfano questi criteri non superano la fase di audit.</p>
-</section>
-
-<section>
-  <h2>I numeri</h2>
-  <div class="kpi">
-    <div><strong>6.500&nbsp;m²</strong>di deposito autorizzato</div>
-    <div><strong>2-8&nbsp;°C</strong>regime del cold chain primario</div>
-    <div><strong>14</strong>aziende farmaceutiche mandanti</div>
-    <div><strong>99,6%</strong>consegne conformi nel 2025</div>
+<section id="certificazioni">
+  <div class="contenitore">
+    <h2>Certificazioni e conformità</h2>
+    <div class="badges">
+      <div class="badge-item">
+        <svg width="56" height="56" viewBox="0 0 56 56" role="img" aria-label="Badge GDP">
+          <circle cx="28" cy="28" r="26" fill="#eef5fa" stroke="#1b4f72" stroke-width="2.5"/>
+          <circle cx="28" cy="28" r="20" fill="none" stroke="#5499c7" stroke-width="1.2" stroke-dasharray="3 3"/>
+          <text x="28" y="26" text-anchor="middle" font-family="Segoe UI, Arial" font-weight="bold" font-size="12" fill="#1b4f72">GDP</text>
+          <text x="28" y="38" text-anchor="middle" font-family="Segoe UI, Arial" font-size="6.5" fill="#5499c7">COMPLIANT</text>
+        </svg>
+        <div class="desc"><strong>GDP – Good Distribution Practice</strong><span>Linee guida UE 2013/C 343/01 e AIFA</span></div>
+      </div>
+      <div class="badge-item">
+        <svg width="56" height="56" viewBox="0 0 56 56" role="img" aria-label="Badge ISO 9001">
+          <path d="M28 2 L34 8 L42 7 L45 15 L53 18 L51 26 L56 33 L49 38 L49 46 L41 47 L37 54 L28 51 L19 54 L15 47 L7 46 L7 38 L0 33 L5 26 L3 18 L11 15 L14 7 L22 8 Z" fill="#eef5fa" stroke="#1b4f72" stroke-width="2" transform="scale(0.93) translate(2 2)"/>
+          <text x="28" y="26" text-anchor="middle" font-family="Segoe UI, Arial" font-weight="bold" font-size="10" fill="#1b4f72">ISO</text>
+          <text x="28" y="37" text-anchor="middle" font-family="Segoe UI, Arial" font-weight="bold" font-size="9" fill="#5499c7">9001</text>
+        </svg>
+        <div class="desc"><strong>ISO 9001 – Sistema di gestione qualità</strong><span>Processi mappati, convalidati e auditati</span></div>
+      </div>
+    </div>
+    <p style="margin-top:18px;">Il sistema qualità opera in conformità alle Good Distribution Practice e alle linee guida AIFA: ogni processo, dal ricevimento alla spedizione, è mappato, convalidato e sottoposto ad audit periodici da parte dei clienti e delle autorità. Deposito autorizzato ai sensi del D.Lgs. 219/06.</p>
   </div>
 </section>
 
-<section id="compliance">
-  <h2>Compliance e tecnologia</h2>
-  <p>Nel farmaceutico la temperatura non è un parametro di servizio: è un requisito regolatorio. Un'escursione fuori dal range 2-8&nbsp;°C può comportare il blocco del lotto, l'apertura di una deviazione e, nei casi più gravi, la distruzione del prodotto. Per questo ogni anello della nostra catena è progettato per essere dimostrabile: mappature termiche periodiche delle celle e dei mezzi, sonde calibrate con certificati riferibili, procedure di gestione delle deviazioni con analisi delle cause e azioni correttive documentate.</p>
-  <p>Il nostro sistema informatico gestisce lotti, scadenze e serializzazione in conformità alla direttiva anticontraffazione europea, con tracciabilità completa di ogni movimentazione. La Persona Responsabile supervisiona il rilascio delle spedizioni e la qualifica dei fornitori: trasportatori, manutentori degli impianti frigo e laboratori di taratura sono tutti inseriti in un piano di audit pluriennale.</p>
-  <p>Investiamo ogni anno in formazione: tutto il personale operativo segue moduli periodici su GDP, gestione delle emergenze e sicurezza, perché la migliore tecnologia non basta senza persone che sappiano usarla correttamente.</p>
+<section id="servizi">
+  <div class="contenitore">
+    <h2>Aree di servizio</h2>
+    <p><strong>Deposito e gestione conto terzi</strong> – stoccaggio qualificato, gestione lotti e scadenze, picking a norma. <strong>Distribuzione secondaria</strong> – consegne programmate a ospedali, grossisti e farmacie. <strong>Gestione resi e richiami</strong> – procedure convalidate per recall di lotto entro 24 ore.</p>
+    <div class="icone-tec">
+      <div class="icona-box">
+        <svg width="40" height="40" viewBox="0 0 40 40" role="img" aria-label="Icona termometro">
+          <rect x="16" y="4" width="8" height="22" rx="4" fill="#eef5fa" stroke="#1b4f72" stroke-width="2"/>
+          <circle cx="20" cy="31" r="7" fill="#5499c7" stroke="#1b4f72" stroke-width="2"/>
+          <rect x="18.5" y="14" width="3" height="14" fill="#5499c7"/>
+          <path d="M27 8 h6 M27 13 h4 M27 18 h6" stroke="#9cc4de" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
+        <div>
+          <h3>Regime 2-8&nbsp;°C qualificato</h3>
+          <p>Celle qualificate 2-8&nbsp;°C e aree a temperatura ambiente controllata 15-25&nbsp;°C, con mappature termiche periodiche e sonde calibrate con certificati riferibili.</p>
+        </div>
+      </div>
+      <div class="icona-box">
+        <svg width="40" height="40" viewBox="0 0 40 40" role="img" aria-label="Icona data logger">
+          <rect x="4" y="7" width="32" height="22" rx="3" fill="#eef5fa" stroke="#1b4f72" stroke-width="2"/>
+          <polyline points="8,22 14,22 17,13 21,25 24,18 32,18" fill="none" stroke="#5499c7" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+          <rect x="14" y="31" width="12" height="4" rx="1.5" fill="#1b4f72"/>
+        </svg>
+        <div>
+          <h3>Monitoraggio in continuo</h3>
+          <p>Data logger a bordo di ogni mezzo e report di temperatura consegnato per ogni singola spedizione: requisito di qualifica non negoziabile per i partner di trasporto.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section id="news" class="news">
-  <h2>News</h2>
-  <article>
-    <h3>Ampliamento della rete: aperta la qualifica di nuovi partner di trasporto</h3>
-    <time>Giugno 2026</time>
-    <p>L'acquisizione di due nuovi mandati vaccinali richiede l'ampliamento della rete distributiva verso Sud. È aperta la procedura di qualifica per partner di trasporto in possesso di certificazione GDP, con mezzi convalidati per il 2-8&nbsp;°C e sistemi di monitoraggio in continuo: il report del data logger è richiesto a corredo di ogni consegna, senza eccezioni.</p>
-  </article>
-  <article>
-    <h3>Superato l'audit GDP annuale senza osservazioni critiche</h3>
-    <time>Aprile 2026</time>
-    <p>L'ispezione annuale sul sistema qualità si è conclusa senza non conformità maggiori. Confermata la piena rispondenza dei processi di deposito e distribuzione alle linee guida europee.</p>
-  </article>
-  <article>
-    <h3>Nuova cella 2-8&nbsp;°C da 1.200 posti pallet</h3>
-    <time>Gennaio 2026</time>
-    <p>Completata la qualifica prestazionale (PQ) della nuova cella frigorifera: mappatura termica su 72 ore, ridondanza degli impianti e allarme remoto presidiato 24/7.</p>
-  </article>
+<section id="profilo">
+  <div class="contenitore">
+    <h2>Chi è PharmaCold</h2>
+    <p>PharmaCold Logistics Solutions SRL nasce a Parma nel 2011 dall'esperienza di un gruppo di professionisti della supply chain farmaceutica. La sede è baricentrica rispetto ai poli farmaceutici del Nord Italia, con accesso rapido alle principali direttrici autostradali. Il deposito autorizzato di 6.500&nbsp;m² è al servizio di 14 aziende farmaceutiche mandanti.</p>
+    <p>Per la distribuzione fisica l'azienda si avvale di partner di trasporto selezionati. I requisiti di qualifica: certificazione GDP, mezzi qualificati e convalidati per il regime 2-8&nbsp;°C, personale formato e data logger a bordo con report di temperatura a corredo di ogni spedizione. I fornitori che non soddisfano questi criteri non superano la fase di audit.</p>
+  </div>
 </section>
 
-<section id="contatti">
-  <h2>Contatti</h2>
-  <p>PharmaCold Logistics Solutions SRL<br>
-  Via Paradigna 118, 43122 Parma (PR)<br>
-  Tel. 0521 6674420 · Email: info@pharmacoldlogistics.it<br>
-  P.IVA 02714580345 · Deposito autorizzato ai sensi del D.Lgs. 219/06</p>
+<section id="indicatori">
+  <div class="contenitore">
+    <h2>Indicatori</h2>
+    <div class="indicatori">
+      <div><strong>6.500&nbsp;m²</strong><span>di deposito autorizzato</span></div>
+      <div><strong>2-8&nbsp;°C</strong><span>regime del cold chain primario</span></div>
+      <div><strong>14</strong><span>aziende farmaceutiche mandanti</span></div>
+      <div><strong>99,6%</strong><span>consegne conformi nel 2025</span></div>
+    </div>
+  </div>
 </section>
 
-<footer>© 2026 PharmaCold Logistics Solutions SRL – Parma · Quality first, always in range</footer>
+<section id="qualita">
+  <div class="contenitore">
+    <h2>Sistema qualità e tecnologia</h2>
+    <p>Nel farmaceutico la temperatura non è un parametro di servizio: è un requisito regolatorio. Un'escursione fuori dal range 2-8&nbsp;°C può comportare il blocco del lotto, l'apertura di una deviazione e, nei casi più gravi, la distruzione del prodotto. Ogni anello della catena è progettato per essere dimostrabile: mappature termiche delle celle e dei mezzi, procedure di gestione delle deviazioni con analisi delle cause e azioni correttive documentate.</p>
+    <p>Il sistema informatico gestisce lotti, scadenze e serializzazione in conformità alla direttiva anticontraffazione europea, con tracciabilità completa di ogni movimentazione. La Persona Responsabile supervisiona il rilascio delle spedizioni e la qualifica dei fornitori: trasportatori, manutentori degli impianti frigo e laboratori di taratura sono inseriti in un piano di audit pluriennale. Tutto il personale operativo segue moduli formativi periodici su GDP, gestione delle emergenze e sicurezza.</p>
+  </div>
+</section>
+
+<section id="comunicazioni" class="comunicazioni">
+  <div class="contenitore">
+    <h2>Comunicazioni</h2>
+    <article>
+      <h3>Ampliamento della rete: aperta la qualifica di nuovi partner di trasporto</h3>
+      <time>Giugno 2026</time>
+      <p>L'acquisizione di due nuovi mandati vaccinali richiede l'ampliamento della rete distributiva verso Sud. È aperta la procedura di qualifica per partner di trasporto in possesso di certificazione GDP, con mezzi convalidati per il 2-8&nbsp;°C e sistemi di monitoraggio in continuo: il report del data logger è richiesto a corredo di ogni consegna, senza eccezioni.</p>
+    </article>
+    <article>
+      <h3>Audit GDP annuale superato senza osservazioni critiche</h3>
+      <time>Aprile 2026</time>
+      <p>L'ispezione annuale sul sistema qualità si è conclusa senza non conformità maggiori: confermata la piena rispondenza dei processi di deposito e distribuzione alle linee guida europee.</p>
+    </article>
+    <article>
+      <h3>Qualificata la nuova cella 2-8&nbsp;°C da 1.200 posti pallet</h3>
+      <time>Gennaio 2026</time>
+      <p>Completata la qualifica prestazionale (PQ): mappatura termica su 72 ore, ridondanza degli impianti e allarme remoto presidiato 24/7.</p>
+    </article>
+  </div>
+</section>
+
+<footer id="sede">
+  <div class="contenitore">
+    <p><strong style="color:#fff;">PharmaCold Logistics Solutions SRL</strong><br>
+    Via Paradigna 118, 43122 Parma (PR)<br>
+    Tel. 0521 6674420 · Email: info@pharmacoldlogistics.it<br>
+    P.IVA 02714580345 · Deposito autorizzato ai sensi del D.Lgs. 219/06</p>
+    <div class="disclaimer">
+      <p>Le informazioni contenute in questo sito hanno carattere esclusivamente istituzionale e sono rivolte a operatori professionali del settore farmaceutico. Nulla di quanto pubblicato costituisce informazione scientifica o promozione di medicinali ai sensi del D.Lgs. 219/06, Titolo VIII. PharmaCold Logistics Solutions SRL non commercializza medicinali in proprio e opera esclusivamente quale depositario e distributore per conto delle aziende titolari di AIC.</p>
+      <p style="margin-top:8px;">© 2026 PharmaCold Logistics Solutions SRL – Parma. Tutti i diritti riservati.</p>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>

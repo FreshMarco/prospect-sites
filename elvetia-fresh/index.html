@@ -3,97 +3,166 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Elvetia Fresh Import SA – Distribuzione ortofrutta e freschi per il retail svizzero</title>
-<meta name="description" content="Elvetia Fresh Import SA, Lugano: importazione e distribuzione di ortofrutta e prodotti freschi italiani per la grande distribuzione e il dettaglio specializzato in Svizzera.">
+<title>Elvetia Fresh Import SA — Lugano</title>
+<meta name="description" content="Elvetia Fresh Import SA, Lugano. Importazione e distribuzione di ortofrutta e prodotti freschi italiani per il retail svizzero. Regime 0-4 °C.">
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { font-family: Verdana, Geneva, sans-serif; color: #2a2a2a; background: #ffffff; line-height: 1.6; font-size: 15px; }
-  header { border-bottom: 3px solid #c8102e; padding: 18px 26px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; background: #fff; }
-  header .logo { font-size: 1.35rem; font-weight: bold; color: #c8102e; }
-  header .logo small { display: block; font-size: 0.7rem; color: #777; font-weight: normal; letter-spacing: 1.5px; }
-  header nav a { color: #444; text-decoration: none; margin-left: 18px; font-size: 0.88rem; }
-  .hero { background: #f7f7f5; padding: 64px 26px; text-align: center; border-bottom: 1px solid #e4e4e0; }
-  .hero h1 { font-size: 1.9rem; color: #1f4d2e; margin-bottom: 12px; }
-  .hero p { max-width: 620px; margin: 0 auto; color: #555; }
-  section { max-width: 880px; margin: 0 auto; padding: 42px 26px; }
-  h2 { color: #c8102e; font-size: 1.3rem; margin-bottom: 14px; }
-  p { margin-bottom: 12px; }
-  .dati { display: flex; gap: 16px; flex-wrap: wrap; }
-  .dati div { flex: 1 1 170px; border: 1px solid #ddd; border-top: 4px solid #1f4d2e; padding: 16px; text-align: center; background: #fbfbfa; }
-  .dati strong { display: block; font-size: 1.5rem; color: #1f4d2e; }
-  .news article { border-bottom: 1px dotted #ccc; padding: 14px 0; }
-  .news h3 { font-size: 1rem; color: #1f4d2e; margin-bottom: 5px; }
-  .news time { font-size: 0.8rem; color: #999; }
-  footer { background: #2a2a2a; color: #ccc; padding: 24px 26px; text-align: center; font-size: 0.85rem; }
+  body { font-family: Helvetica, Arial, sans-serif; color: #1a1a1a; background: #ffffff; line-height: 1.55; font-size: 16px; }
+  .griglia { max-width: 1000px; margin: 0 auto; padding: 0 24px; }
+  header { padding: 28px 0; border-bottom: 1px solid #e0e0e0; }
+  header .griglia { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
+  .marchio { display: flex; align-items: center; gap: 14px; }
+  .marchio .nome { font-size: 1.05rem; font-weight: 700; letter-spacing: .18em; }
+  .marchio .nome small { display: block; font-size: .62rem; font-weight: 400; color: #8a8a8a; letter-spacing: .3em; margin-top: 2px; }
+  nav a { color: #1a1a1a; text-decoration: none; font-size: .8rem; letter-spacing: .1em; text-transform: uppercase; margin-left: 28px; }
+  nav a:hover { color: #d0342c; }
+  .intro { padding: 90px 0; border-bottom: 1px solid #e0e0e0; }
+  .intro h1 { font-size: clamp(1.7rem, 3.5vw, 2.4rem); font-weight: 700; max-width: 640px; letter-spacing: -.01em; }
+  .intro p { margin-top: 18px; max-width: 520px; color: #555; }
+  section { padding: 70px 0; border-bottom: 1px solid #e0e0e0; }
+  h2 { font-size: .8rem; text-transform: uppercase; letter-spacing: .28em; color: #d0342c; margin-bottom: 28px; }
+  p { margin-bottom: 12px; max-width: 700px; }
+  .cifre { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1px; background: #e0e0e0; border: 1px solid #e0e0e0; }
+  .cifre div { background: #fff; padding: 34px 24px; }
+  .cifre strong { display: block; font-size: 2.1rem; font-weight: 700; letter-spacing: -.02em; }
+  .cifre span { font-size: .82rem; color: #767676; text-transform: uppercase; letter-spacing: .08em; }
+  .colonne-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 48px; }
+  .colonne-2 h3 { font-size: 1rem; margin-bottom: 10px; }
+  .colonne-2 p { font-size: .94rem; color: #444; margin-bottom: 0; }
+  .comunicazioni article { display: grid; grid-template-columns: 130px 1fr; gap: 24px; padding: 26px 0; border-top: 1px solid #ececec; }
+  .comunicazioni article:first-of-type { border-top: none; padding-top: 0; }
+  .comunicazioni time { font-size: .78rem; color: #999; text-transform: uppercase; letter-spacing: .12em; padding-top: 4px; }
+  .comunicazioni h3 { font-size: 1.02rem; margin-bottom: 8px; }
+  .comunicazioni p { font-size: .94rem; color: #444; margin-bottom: 0; }
+  footer { padding: 36px 0; }
+  footer .griglia { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; font-size: .8rem; color: #8a8a8a; }
+  @media (max-width: 640px) { .comunicazioni article { grid-template-columns: 1fr; gap: 6px; } }
 </style>
 </head>
 <body>
+
 <header>
-  <div class="logo">ELVETIA FRESH IMPORT SA<small>LUGANO · SVIZZERA</small></div>
-  <nav><a href="#chi-siamo">Chi siamo</a><a href="#servizi">Servizi</a><a href="#news">Aggiornamenti</a><a href="#contatti">Contatti</a></nav>
+  <div class="griglia">
+    <div class="marchio">
+      <svg width="44" height="44" viewBox="0 0 44 44" role="img" aria-label="Logo Elvetia Fresh">
+        <rect x="2" y="2" width="40" height="40" fill="#ffffff" stroke="#d0342c" stroke-width="2"/>
+        <rect x="19" y="8" width="6" height="28" fill="#d0342c"/>
+        <rect x="8" y="19" width="28" height="6" fill="#d0342c"/>
+        <rect x="19" y="19" width="6" height="6" fill="#1f7a3d"/>
+      </svg>
+      <div class="nome">ELVETIA FRESH IMPORT SA<small>LUGANO — SVIZZERA</small></div>
+    </div>
+    <nav>
+      <a href="#azienda">L'azienda</a><a href="#cifre">Cifre</a><a href="#contesto">Il mercato</a><a href="#comunicazioni">Comunicazioni</a><a href="#recapiti">Recapiti</a>
+    </nav>
+  </div>
 </header>
 
-<div class="hero">
-  <h1>Il fresco italiano sugli scaffali svizzeri, ogni settimana</h1>
-  <p>Da oltre vent'anni selezioniamo ortofrutta e prodotti freschi dai migliori produttori italiani e li portiamo al retail svizzero con la puntualità che il mercato elvetico pretende.</p>
+<div class="intro">
+  <div class="griglia">
+    <h1>Il fresco italiano sugli scaffali svizzeri. Ogni settimana, senza eccezioni.</h1>
+    <p>Distributore indipendente con sede a Lugano. Ortofrutta e prodotti freschi dai migliori produttori italiani al retail elvetico, dal 2003.</p>
+  </div>
 </div>
 
-<section id="chi-siamo">
-  <h2>Chi siamo</h2>
-  <p>Elvetia Fresh Import SA è un distributore indipendente con sede a Lugano, nel Canton Ticino. Nata nel 2003 come piccolo importatore di ortofrutta per il dettaglio ticinese, oggi l'azienda rifornisce insegne della grande distribuzione svizzera, gastronomie e dettaglio specializzato in tutta la Confederazione, dalla Svizzera italiana fino a Zurigo e Basilea.</p>
-  <p>Il nostro catalogo comprende ortofrutta di stagione, quarta gamma, latticini freschi e specialità gastronomiche italiane. Lavoriamo esclusivamente prodotto fresco in regime di temperatura controllata 0-4&nbsp;°C, con rotazioni rapide: la merce raccolta in Italia il lunedì è sugli scaffali svizzeri entro 48 ore.</p>
-</section>
-
-<section id="servizi">
-  <h2>Cosa facciamo</h2>
-  <p><strong>Selezione e acquisto</strong> – accordi diretti con consorzi e produttori in Piemonte, Emilia-Romagna, Trentino e Sicilia. <strong>Controllo qualità</strong> – verifica in ingresso su pezzatura, residui e temperatura di ogni lotto. <strong>Distribuzione</strong> – consegne programmate ai centri di distribuzione dei nostri clienti retail in tutta la Svizzera.</p>
-  <p>L'attraversamento della frontiera è il punto critico del nostro mestiere: ogni carico richiede la gestione delle pratiche doganali elvetiche, e i tempi di sdoganamento incidono direttamente sulla shelf life del prodotto. Per questo chiediamo ai nostri fornitori di servizi la stessa precisione che i clienti chiedono a noi.</p>
-</section>
-
-<section>
-  <h2>I numeri della nostra settimana</h2>
-  <div class="dati">
-    <div><strong>15</strong>pallet movimentati a settimana</div>
-    <div><strong>3</strong>tratte settimanali Italia–Svizzera</div>
-    <div><strong>0-4&nbsp;°C</strong>tutto il flusso, solo fresco</div>
-    <div><strong>48h</strong>dal campo allo scaffale</div>
+<section id="azienda">
+  <div class="griglia">
+    <h2>L'azienda</h2>
+    <p>Elvetia Fresh Import SA nasce nel 2003 come importatore di ortofrutta per il dettaglio ticinese. Oggi rifornisce insegne della grande distribuzione svizzera, gastronomie e dettaglio specializzato in tutta la Confederazione, da Lugano fino a Zurigo e Basilea.</p>
+    <p>Il catalogo comprende ortofrutta di stagione, quarta gamma, latticini freschi e specialità gastronomiche italiane. Si lavora esclusivamente prodotto fresco in regime 0-4&nbsp;°C, con rotazioni rapide: la merce raccolta in Italia il lunedì è sugli scaffali svizzeri entro 48 ore.</p>
+    <p>La struttura è volutamente essenziale: un ufficio acquisti che segue i produttori italiani, un ufficio dedicato ai rapporti con le autorità doganali, la piattaforma refrigerata di Lugano per il ricevimento e lo smistamento. Ogni funzione risponde a un criterio unico: la merce non deve mai attendere.</p>
   </div>
 </section>
 
-<section id="mercato">
-  <h2>Perché il mercato svizzero è diverso</h2>
-  <p>Chi lavora con il retail elvetico lo sa: la Svizzera non è un mercato UE e non perdona l'approssimazione. Ogni carico in ingresso richiede dichiarazione doganale, il rispetto dei contingenti ortofrutticoli federali e, per alcune referenze, i controlli fitosanitari al confine. Le finestre di consegna dei centri di distribuzione svizzeri sono rigide: un ritardo di due ore può significare lo slittamento di un giorno intero, inaccettabile per prodotti con una shelf life di pochi giorni.</p>
-  <p>In vent'anni abbiamo costruito le competenze per governare questa complessità: un ufficio interno dedicato ai rapporti con le autorità doganali, procedure consolidate per la documentazione di ogni carico e un calendario di importazione che tiene conto dei contingenti stagionali. Ai partner che lavorano con noi chiediamo di inserirsi in questo ingranaggio con la stessa affidabilità.</p>
-  <p>È un mestiere di precisione, ma ripaga: il consumatore svizzero riconosce la qualità del fresco italiano ed è disposto a premiarla, a patto che arrivi in condizioni impeccabili.</p>
+<section id="cifre">
+  <div class="griglia">
+    <h2>Le cifre della settimana</h2>
+    <div class="cifre">
+      <div><strong>15</strong><span>pallet movimentati / settimana</span></div>
+      <div><strong>3</strong><span>tratte settimanali Italia–Svizzera</span></div>
+      <div><strong>0-4&nbsp;°C</strong><span>tutto il flusso, solo fresco</span></div>
+      <div><strong>48h</strong><span>dal campo allo scaffale</span></div>
+    </div>
+  </div>
 </section>
 
-<section id="news" class="news">
-  <h2>Aggiornamenti</h2>
-  <article>
-    <h3>Selezione in corso: nuovo vettore per le tratte Italia–Svizzera</h3>
-    <time>Giugno 2026</time>
-    <p>Con il rinnovo degli accordi con due insegne retail abbiamo consolidato tre tratte settimanali fisse dall'Italia verso i nostri magazzini di Lugano. È aperta la selezione di un vettore in grado di coprire le tre partenze settimanali a 0-4&nbsp;°C, con gestione completa delle pratiche doganali elvetiche inclusa nel servizio: chi fosse interessato può scrivere all'ufficio acquisti.</p>
-  </article>
-  <article>
-    <h3>Ampliata la cella di ricevimento a Lugano</h3>
-    <time>Marzo 2026</time>
-    <p>Completati i lavori di ampliamento della piattaforma: la capacità di ricevimento in regime refrigerato cresce del 40%, in vista dell'aumento dei volumi previsto per la stagione estiva.</p>
-  </article>
-  <article>
-    <h3>Nuova linea di quarta gamma a marchio proprio</h3>
-    <time>Gennaio 2026</time>
-    <p>Debutta "Elvetia Fresca", la linea di insalate pronte confezionate in Italia in esclusiva per il mercato svizzero. Prime consegne ai punti vendita del Ticino già da febbraio.</p>
-  </article>
+<section id="prestazioni">
+  <div class="griglia">
+    <h2>Prestazioni</h2>
+    <p>Quattro funzioni, un unico standard di servizio. Ogni fase è documentata e verificabile dal cliente, dall'ordine al documento di consegna: è la condizione che il retail elvetico pone ai propri fornitori, ed è la stessa che l'azienda pone a sé stessa.</p>
+    <div class="colonne-2">
+      <div>
+        <h3>Selezione e acquisto</h3>
+        <p>Accordi diretti con consorzi e produttori in Piemonte, Emilia-Romagna, Trentino e Sicilia.</p>
+      </div>
+      <div>
+        <h3>Controllo qualità</h3>
+        <p>Verifica in ingresso su pezzatura, residui e temperatura di ogni singolo lotto.</p>
+      </div>
+      <div>
+        <h3>Distribuzione</h3>
+        <p>Consegne programmate ai centri di distribuzione dei clienti retail in tutta la Svizzera.</p>
+      </div>
+      <div>
+        <h3>Gestione doganale</h3>
+        <p>Ufficio interno dedicato ai rapporti con le autorità doganali e alla documentazione di ogni carico.</p>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section id="contatti">
-  <h2>Contatti</h2>
-  <p>Elvetia Fresh Import SA<br>
-  Via Cantonale 42, 6900 Lugano – Svizzera<br>
-  Tel. 091 9235570 · Email: info@elvetiafresh.ch<br>
-  CHE-214.883.116 · Uffici: lun–ven 7:30–17:00</p>
+<section id="contesto">
+  <div class="griglia">
+    <h2>Il contesto elvetico</h2>
+    <p>La Svizzera non è un mercato UE e non perdona l'approssimazione. Ogni carico in ingresso richiede dichiarazione doganale, il rispetto dei contingenti ortofrutticoli federali e, per alcune referenze, controlli fitosanitari al confine. I tempi di sdoganamento incidono direttamente sulla shelf life del prodotto.</p>
+    <p>Le finestre di consegna dei centri di distribuzione svizzeri sono rigide: un ritardo di due ore può significare lo slittamento di un giorno intero, inaccettabile per prodotti con pochi giorni di vita utile. In oltre vent'anni l'azienda ha costruito procedure consolidate e un calendario di importazione che tiene conto dei contingenti stagionali. Ai partner si chiede di inserirsi in questo ingranaggio con la stessa affidabilità.</p>
+    <p>È un mestiere di precisione, ma ripaga: il consumatore svizzero riconosce la qualità del fresco italiano ed è disposto a premiarla, a condizione che arrivi in condizioni impeccabili. La reputazione costruita presso le insegne retail è il risultato di questa disciplina, applicata carico dopo carico, settimana dopo settimana, senza deroghe.</p>
+  </div>
 </section>
 
-<footer>© 2026 Elvetia Fresh Import SA – Lugano · Iscritta al Registro di commercio del Canton Ticino</footer>
+<section id="comunicazioni" class="comunicazioni">
+  <div class="griglia">
+    <h2>Comunicazioni</h2>
+    <article>
+      <time>Giugno 2026</time>
+      <div>
+        <h3>Selezione in corso: nuovo vettore per le tratte Italia–Svizzera</h3>
+        <p>Con il rinnovo degli accordi con due insegne retail sono state consolidate tre tratte settimanali fisse dall'Italia ai magazzini di Lugano. È aperta la selezione di un vettore in grado di coprire le tre partenze settimanali a 0-4&nbsp;°C, con gestione completa delle pratiche doganali elvetiche inclusa nel servizio. Gli interessati possono scrivere all'ufficio acquisti.</p>
+      </div>
+    </article>
+    <article>
+      <time>Marzo 2026</time>
+      <div>
+        <h3>Ampliata la piattaforma di Lugano</h3>
+        <p>Conclusi i lavori: la capacità di ricevimento in regime refrigerato cresce del 40%, in vista dell'aumento dei volumi della stagione estiva.</p>
+      </div>
+    </article>
+    <article>
+      <time>Gennaio 2026</time>
+      <div>
+        <h3>Debutta la linea "Elvetia Fresca"</h3>
+        <p>Insalate pronte di quarta gamma confezionate in Italia in esclusiva per il mercato svizzero. Prime consegne in Ticino da febbraio.</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section id="recapiti">
+  <div class="griglia">
+    <h2>Recapiti</h2>
+    <p>Elvetia Fresh Import SA<br>
+    Via Cantonale 42, 6900 Lugano — Svizzera<br>
+    Tel. 091 9235570 · Email: info@elvetiafresh.ch<br>
+    CHE-214.883.116 · Uffici: lun–ven 7:30–17:00</p>
+  </div>
+</section>
+
+<footer>
+  <div class="griglia">
+    <span>© 2026 Elvetia Fresh Import SA</span>
+    <span>Iscritta al Registro di commercio del Canton Ticino</span>
+  </div>
+</footer>
+
 </body>
 </html>

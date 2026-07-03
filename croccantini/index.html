@@ -3,98 +3,166 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Croccantini &amp; Co SPA – Petfood secco made in Verona</title>
-<meta name="description" content="Croccantini & Co SPA di Verona: produzione di alimenti secchi per cani e gatti, crocchette e snack per la grande distribuzione e le catene specializzate pet.">
+<title>Croccantini &amp; Co – Crocchette e snack per cani e gatti, made in Verona!</title>
+<meta name="description" content="Croccantini & Co SPA: crocchette e snack per cani e gatti prodotti a Verona dal 1995. Linea Cane, Linea Gatto e treats funzionali per GDO e catene pet.">
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { font-family: 'Trebuchet MS', 'Lucida Sans Unicode', sans-serif; color: #4a3626; background: #fffaf3; line-height: 1.65; }
-  header { background: #e8862e; color: #fff; padding: 16px 26px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
-  header .logo { font-size: 1.45rem; font-weight: bold; }
-  header .logo span { color: #ffe3c2; }
-  header nav a { color: #fff3e3; text-decoration: none; margin-left: 18px; font-size: 0.92rem; font-weight: bold; }
-  .hero { background: #fff1de; padding: 66px 26px; text-align: center; }
-  .hero h1 { font-size: 2.1rem; color: #b85c12; margin-bottom: 12px; }
-  .hero p { max-width: 600px; margin: 0 auto; color: #6d523a; font-size: 1.1rem; }
-  section { max-width: 900px; margin: 0 auto; padding: 42px 26px; }
-  h2 { color: #b85c12; font-size: 1.4rem; margin-bottom: 14px; }
+  body { font-family: 'Trebuchet MS', 'Segoe UI', Verdana, sans-serif; color: #52351f; background: #fff7ec; line-height: 1.7; }
+  .fascia { max-width: 980px; margin: 0 auto; padding: 0 24px; }
+  header { background: #f28c1e; padding: 14px 0; }
+  header .fascia { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+  .logo { display: flex; align-items: center; gap: 10px; color: #fff; font-size: 1.4rem; font-weight: 800; letter-spacing: .02em; }
+  header nav a { color: #ffe9cc; text-decoration: none; margin-left: 16px; font-weight: 700; font-size: .95rem; }
+  header nav a:hover { color: #fff; }
+  .hero { background: radial-gradient(circle at 70% 20%, #ffd9a3 0%, #ffb75e 55%, #f28c1e 100%); text-align: center; padding: 70px 24px 80px; border-radius: 0 0 48px 48px; }
+  .hero h1 { color: #6b3d10; font-size: clamp(1.9rem, 4.5vw, 2.7rem); font-weight: 800; margin-bottom: 14px; }
+  .hero p { color: #7a4d1f; max-width: 560px; margin: 0 auto; font-size: 1.12rem; font-weight: 600; }
+  section { padding: 54px 0; }
+  h2 { color: #d96f0e; font-size: 1.6rem; font-weight: 800; margin-bottom: 20px; }
   p { margin-bottom: 12px; }
-  .stats { display: flex; gap: 18px; flex-wrap: wrap; }
-  .stats div { flex: 1 1 180px; background: #fff; border: 2px solid #f3c48f; border-radius: 12px; padding: 18px; text-align: center; }
-  .stats strong { display: block; font-size: 1.6rem; color: #e8862e; }
-  .news article { background: #fff; border-radius: 10px; border: 1px solid #f0d9bd; padding: 16px 20px; margin-bottom: 14px; }
-  .news h3 { font-size: 1.05rem; color: #b85c12; margin-bottom: 6px; }
-  .news time { font-size: 0.83rem; color: #a5866e; }
-  footer { background: #4a3626; color: #f0d9bd; padding: 26px; text-align: center; font-size: 0.9rem; }
+  .prodotti-griglia { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 22px; }
+  .prodotto { background: #fff; border-radius: 22px; padding: 26px 22px; text-align: center; box-shadow: 0 4px 0 #f3c48f; }
+  .prodotto h3 { color: #b85c12; font-size: 1.08rem; margin: 12px 0 8px; }
+  .prodotto p { font-size: .92rem; margin-bottom: 0; color: #6d523a; }
+  .numeri-fila { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 18px; }
+  .numeri-fila div { background: #ffedd6; border-radius: 18px; padding: 22px; text-align: center; }
+  .numeri-fila strong { display: block; font-size: 1.8rem; color: #d96f0e; font-weight: 800; }
+  .numeri-fila span { font-size: .88rem; color: #7a5a3d; }
+  .novita article { background: #fff; border-radius: 18px; padding: 20px 24px; margin-bottom: 16px; border: 2px dashed #f3c48f; }
+  .novita h3 { color: #d96f0e; font-size: 1.06rem; margin-bottom: 4px; }
+  .novita time { font-size: .82rem; color: #a5866e; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; }
+  .novita p { margin: 8px 0 0; font-size: .96rem; }
+  footer { background: #52351f; color: #f3dcbf; text-align: center; padding: 34px 24px; border-radius: 48px 48px 0 0; }
+  footer p { margin-bottom: 8px; font-size: .95rem; }
+  footer .motto { font-weight: 800; color: #ffb75e; font-size: 1.05rem; }
 </style>
 </head>
 <body>
+
 <header>
-  <div class="logo">CROCCANTINI <span>&amp; CO</span></div>
-  <nav><a href="#azienda">Azienda</a><a href="#prodotti">Prodotti</a><a href="#news">News</a><a href="#contatti">Contatti</a></nav>
+  <div class="fascia">
+    <div class="logo">
+      <svg width="44" height="40" viewBox="0 0 44 40" role="img" aria-label="Logo zampa Croccantini e Co">
+      <ellipse cx="22" cy="27" rx="11" ry="9" fill="#fff"/>
+      <ellipse cx="8" cy="15" rx="4.5" ry="6" fill="#fff" transform="rotate(-18 8 15)"/>
+      <ellipse cx="17" cy="8" rx="4.5" ry="6" fill="#fff"/>
+      <ellipse cx="27" cy="8" rx="4.5" ry="6" fill="#fff"/>
+      <ellipse cx="36" cy="15" rx="4.5" ry="6" fill="#fff" transform="rotate(18 36 15)"/>
+      </svg>
+      CROCCANTINI &amp; CO
+    </div>
+    <nav>
+      <a href="#gamma">La gamma</a>
+      <a href="#storia">La nostra storia</a>
+      <a href="#numeri">In cifre</a>
+      <a href="#novita">Novità</a>
+      <a href="#scrivici">Scrivici</a>
+    </nav>
+  </div>
 </header>
 
 <div class="hero">
-  <h1>Crocchette che scodinzolano di qualità</h1>
-  <p>Da Verona, alimenti secchi per cani e gatti formulati con i nostri nutrizionisti e prodotti in Italia. Sugli scaffali della GDO e delle migliori catene pet dal 1995.</p>
+  <h1>Crocchette che scodinzolano di qualità!</h1>
+  <p>Alimenti secchi per cani e gatti formulati con i nostri nutrizionisti e prodotti a Verona. Sugli scaffali della GDO e delle migliori catene pet dal 1995.</p>
 </div>
 
-<section id="azienda">
-  <h2>L'azienda</h2>
-  <p>Croccantini &amp; Co SPA è un produttore indipendente di petfood secco con stabilimento a Verona, nel cuore di uno dei distretti agroalimentari più dinamici d'Italia. Tre linee di estrusione, un laboratorio interno di analisi e 62 dipendenti ci permettono di produrre oltre 18.000 tonnellate l'anno di crocchette e snack per cani e gatti.</p>
-  <p>Lavoriamo su due binari: il nostro marchio "Croccantini &amp; Co", distribuito nella grande distribuzione e nelle catene specializzate pet, e le private label che sviluppiamo su ricetta per insegne italiane ed europee. Tutta la produzione è a lunga conservazione e viaggia a temperatura ambiente: niente celle, niente catena del freddo, solo pallet ben filmati e magazzini asciutti.</p>
-</section>
-
-<section id="prodotti">
-  <h2>I nostri prodotti</h2>
-  <p><strong>Linea Cane</strong> – mantenimento, puppy e senior in sacchi da 2 a 20 kg, con ricette monoproteiche e grain free. <strong>Linea Gatto</strong> – crocchette sterilized, indoor e hairball in formati da 400 g a 10 kg. <strong>Snack &amp; Treats</strong> – biscotti e premietti funzionali, la categoria che cresce di più a scaffale.</p>
-  <p>Ogni ricetta nasce nel nostro laboratorio con il supporto di nutrizionisti veterinari, e ogni lotto è controllato su parametri chimico-fisici e microbiologici prima del rilascio. Lo stabilimento è certificato secondo gli standard europei per la produzione di alimenti per animali da compagnia.</p>
-</section>
-
-<section>
-  <h2>I numeri</h2>
-  <div class="stats">
-    <div><strong>20</strong>pallet spediti a settimana</div>
-    <div><strong>18.000</strong>tonnellate prodotte l'anno</div>
-    <div><strong>250+</strong>referenze a catalogo</div>
-    <div><strong>100%</strong>trasporto a temperatura ambiente</div>
+<section id="gamma">
+  <div class="fascia">
+    <h2>La gamma Croccantini &amp; Co</h2>
+    <div class="prodotti-griglia">
+      <div class="prodotto">
+        <svg width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="Icona sacco grande">
+          <path d="M16 14 L48 14 L52 54 Q52 58 48 58 L16 58 Q12 58 12 54 Z" fill="#f8b566" stroke="#b85c12" stroke-width="2.5" stroke-linejoin="round"/>
+          <path d="M16 14 L20 6 L44 6 L48 14" fill="#ffd9a3" stroke="#b85c12" stroke-width="2.5" stroke-linejoin="round"/>
+          <ellipse cx="32" cy="38" rx="11" ry="8" fill="#fff"/>
+          <text x="32" y="42" text-anchor="middle" font-family="Trebuchet MS" font-weight="bold" font-size="9" fill="#b85c12">20 kg</text>
+        </svg>
+        <h3>Linea Cane</h3>
+        <p>Mantenimento, puppy e senior in sacchi da 2 a 20 kg. Ricette monoproteiche e grain free.</p>
+      </div>
+      <div class="prodotto">
+        <svg width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="Icona confezione gatto">
+          <rect x="14" y="12" width="36" height="44" rx="5" fill="#f8b566" stroke="#b85c12" stroke-width="2.5"/>
+          <path d="M24 28 L28 20 L32 28 M32 28 L36 20 L40 28" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="28" cy="36" r="2" fill="#fff"/><circle cx="36" cy="36" r="2" fill="#fff"/>
+          <path d="M28 43 Q32 47 36 43" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/>
+        </svg>
+        <h3>Linea Gatto</h3>
+        <p>Sterilized, indoor e hairball in formati da 400 g a 10 kg. Bontà da fare le fusa.</p>
+      </div>
+      <div class="prodotto">
+        <svg width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="Icona biscotto osso">
+          <path d="M18 26 a6 6 0 1 1 6-8 a6 6 0 1 1 8 6 L38 30 a6 6 0 1 1 8 6 a6 6 0 1 1-6 8 a6 6 0 1 1-8-6 L26 32 a6 6 0 1 1-8-6 Z" fill="#e8a35c" stroke="#b85c12" stroke-width="2.5" stroke-linejoin="round" transform="rotate(8 32 32)"/>
+        </svg>
+        <h3>Snack &amp; Treats</h3>
+        <p>Biscotti e premietti funzionali: la categoria che cresce di più a scaffale!</p>
+      </div>
+      <div class="prodotto">
+        <svg width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="Icona private label">
+          <rect x="12" y="10" width="40" height="46" rx="5" fill="#fff" stroke="#b85c12" stroke-width="2.5"/>
+          <rect x="18" y="18" width="28" height="12" rx="3" fill="#ffd9a3"/>
+          <text x="32" y="27" text-anchor="middle" font-family="Trebuchet MS" font-weight="bold" font-size="8" fill="#b85c12">TUO LOGO</text>
+          <path d="M20 38 h24 M20 44 h18" stroke="#e8c9a5" stroke-width="2.5" stroke-linecap="round"/>
+        </svg>
+        <h3>Private label</h3>
+        <p>Ricette sviluppate su misura per insegne italiane ed europee, dal brief allo scaffale.</p>
+      </div>
+    </div>
+    <p style="margin-top:20px;">Ogni ricetta nasce nel nostro laboratorio con il supporto di nutrizionisti veterinari, e ogni lotto è controllato su parametri chimico-fisici e microbiologici prima del rilascio. Lo stabilimento è certificato secondo gli standard europei per la produzione di alimenti per animali da compagnia.</p>
   </div>
-  <p style="margin-top:14px;">Le spedizioni partono ogni settimana verso i centri distributivi della GDO e delle principali catene pet italiane, con una media di 20 pallet settimanali su trasporto standard a temperatura ambiente.</p>
 </section>
 
-<section id="ricerca">
-  <h2>Ricerca, ingredienti e territorio</h2>
-  <p>Dietro ogni crocchetta c'è un lavoro che comincia molto prima dell'estrusore. Il nostro ufficio ricerca e sviluppo collabora con il dipartimento di scienze veterinarie di un ateneo del Nord-Est per validare le formulazioni: digeribilità, appetibilità e profili nutrizionali vengono testati prima del lancio di ogni referenza. Gli ingredienti arrivano in gran parte da filiere italiane: cereali dalla pianura veronese e mantovana, carni da stabilimenti nazionali, erbe officinali per le linee funzionali da coltivazioni piemontesi.</p>
-  <p>La logistica del petfood secco è semplice ma non banale: i sacchi temono l'umidità e gli schiacciamenti, quindi chiediamo magazzini asciutti, movimentazione attenta e pallet integri alla consegna. In compenso niente vincoli di temperatura: il prodotto viaggia tutto l'anno su mezzi standard, d'estate come d'inverno.</p>
-  <p>Il legame con Verona è parte dell'identità aziendale: sosteniamo il canile municipale con donazioni mensili di prodotto e da tre anni siamo sponsor della manifestazione cittadina dedicata agli animali da compagnia, che ogni settembre porta in fiera oltre ventimila visitatori.</p>
+<section id="storia">
+  <div class="fascia">
+    <h2>La nostra storia</h2>
+    <p>Croccantini &amp; Co SPA è un produttore indipendente di petfood secco con stabilimento a Verona, nel cuore di uno dei distretti agroalimentari più vivaci d'Italia. Con tre linee di estrusione, un laboratorio interno di analisi e 62 dipendenti sforniamo oltre 18.000 tonnellate l'anno di crocchette e snack per cani e gatti.</p>
+    <p>Dietro ogni crocchetta c'è un lavoro che comincia molto prima dell'estrusore: il nostro ufficio ricerca e sviluppo collabora con il dipartimento di scienze veterinarie di un ateneo del Nord-Est per validare le formulazioni. Digeribilità, appetibilità e profili nutrizionali vengono testati prima del lancio di ogni referenza, perché la coda che scodinzola è il nostro controllo qualità preferito!</p>
+    <p>Gli ingredienti arrivano in gran parte da filiere italiane: cereali dalla pianura veronese e mantovana, carni da stabilimenti nazionali, erbe officinali piemontesi per le linee funzionali. E il legame con Verona è di casa: sosteniamo il canile municipale con donazioni mensili di prodotto e da tre anni siamo sponsor della manifestazione cittadina dedicata agli animali da compagnia, oltre ventimila visitatori ogni settembre!</p>
+    <p>Tutta la produzione è a lunga conservazione e viaggia a temperatura ambiente: niente celle, niente catena del freddo, solo pallet ben filmati e magazzini asciutti. I sacchi temono solo l'umidità e gli schiacciamenti: chiediamo movimentazione attenta e pallet integri alla consegna, e in cambio niente vincoli di temperatura, d'estate come d'inverno.</p>
+  </div>
 </section>
 
-<section id="news" class="news">
-  <h2>News</h2>
-  <article>
-    <h3>Arrivano i nuovi formati famiglia da 15 e 20 kg</h3>
-    <time>Maggio 2026</time>
-    <p>Debuttano a scaffale i sacchi convenienza della Linea Cane, pensati per le famiglie con più animali. Il nuovo formato ha richiesto l'adeguamento della linea di confezionamento 3, ora pienamente operativa.</p>
-  </article>
-  <article>
-    <h3>La rete vendita cresce: sei nuovi agenti nel Centro-Sud</h3>
-    <time>Marzo 2026</time>
-    <p>Prosegue il piano di sviluppo commerciale: con gli ultimi ingressi la rete raggiunge 28 agenti sul territorio nazionale. Obiettivo: portare la distribuzione nelle catene pet regionali di Lazio, Campania e Puglia.</p>
-  </article>
-  <article>
-    <h3>Snack funzionali: +22% nel primo trimestre</h3>
-    <time>Aprile 2026</time>
-    <p>La categoria treats conferma il trend positivo. In arrivo dopo l'estate due nuove ricette con ingredienti funzionali per la salute articolare e del pelo.</p>
-  </article>
+<section id="numeri">
+  <div class="fascia">
+    <h2>Croccantini &amp; Co in cifre</h2>
+    <div class="numeri-fila">
+      <div><strong>20</strong><span>pallet spediti a settimana</span></div>
+      <div><strong>18.000</strong><span>tonnellate prodotte l'anno</span></div>
+      <div><strong>250+</strong><span>referenze a catalogo</span></div>
+      <div><strong>100%</strong><span>trasporto a temperatura ambiente</span></div>
+    </div>
+    <p style="margin-top:16px;">Ogni settimana partono in media 20 pallet verso i centri distributivi della GDO e delle principali catene pet italiane, tutti su trasporto standard a temperatura ambiente. Una logistica semplice, che ci lascia il tempo di pensare a quello che conta davvero: le ricette!</p>
+  </div>
 </section>
 
-<section id="contatti">
-  <h2>Contatti</h2>
-  <p>Croccantini &amp; Co SPA<br>
-  Via del Perlar 33, 37135 Verona (VR)<br>
+<section id="novita" class="novita">
+  <div class="fascia">
+    <h2>Novità dal mondo Croccantini</h2>
+    <article>
+      <h3>Arrivano i formati famiglia da 15 e 20 kg!</h3>
+      <time>Maggio 2026</time>
+      <p>Debuttano a scaffale i sacchi convenienza della Linea Cane, pensati per le famiglie con più animali. Il nuovo formato ha richiesto l'adeguamento della linea di confezionamento 3, ora pienamente operativa.</p>
+    </article>
+    <article>
+      <h3>Snack funzionali: +22% nel primo trimestre</h3>
+      <time>Aprile 2026</time>
+      <p>La categoria treats conferma il trend positivo. Dopo l'estate arrivano due nuove ricette con ingredienti funzionali per la salute articolare e del pelo.</p>
+    </article>
+    <article>
+      <h3>La rete vendita cresce: sei nuovi agenti nel Centro-Sud</h3>
+      <time>Marzo 2026</time>
+      <p>Con gli ultimi ingressi la rete raggiunge 28 agenti sul territorio nazionale. Obiettivo: portare la distribuzione nelle catene pet regionali di Lazio, Campania e Puglia.</p>
+    </article>
+  </div>
+</section>
+
+<footer id="scrivici">
+  <p class="motto">Nutriamo chi ti fa compagnia!</p>
+  <p>Croccantini &amp; Co SPA · Via del Perlar 33, 37135 Verona (VR)<br>
   Tel. 045 8203375 · Email: info@croccantinico.it<br>
   P.IVA 03588470230 · Uffici: lun–ven 8:30–18:00</p>
-</section>
+  <p>© 2026 Croccantini &amp; Co SPA</p>
+</footer>
 
-<footer>© 2026 Croccantini &amp; Co SPA – Verona · Nutriamo chi ti fa compagnia</footer>
 </body>
 </html>
